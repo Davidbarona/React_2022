@@ -1,6 +1,6 @@
- import heroes, {owners}  from './data/heroes'
+import heroes, {owners}  from '../data/heroes'
 
- console.log(owners);
+console.log(owners);
 
 // const getHeoreById = (id) => {
 //     return heroes.find((hero)=>{
@@ -10,18 +10,18 @@
 //          else {
 //              return null 
 //          }
-         
+        
 //     })
 // }
 
 
-     const getHeoreById = (id) =>{
-         return heroes.find((heroe)=> heroe.id === id)
-     }
+    const getHeoreById = (id) =>{
+        return heroes.find((heroe)=> heroe.id === id)
+    }
 
 console.log(getHeoreById(4));
 
-     const getHeroesByOwner = (owner) => heroes.filter((heroe)=> heroe.owner === owner)
+    const getHeroesByOwner = (owner) => heroes.filter((heroe)=> heroe.owner === owner)
 
 console.log(getHeroesByOwner('DC'));
 
